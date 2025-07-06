@@ -15,13 +15,24 @@
       src: local('Proxima Nova'), sans-serif;
     }
 
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+        transform: translateY(10px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
     body {
       margin: 0;
       font-family: 'Georgia Pro', Georgia, serif;
     }
 
     .navbar {
-      background-color: #2e9df7;
+      background-color: #2E9DF7;
       display: flex;
       justify-content: space-evenly;
       align-items: center;
@@ -64,6 +75,7 @@
       bottom: 0;
       background: url('https://cdn2.dropmarkusercontent.com/52043/1949e4436567a4dced4fecfe637f6e9ae867735b91276f4a93bd5d6d3234cd84/preview/4692_Ethiopia_2019_CG-.jpg?Expires=1751782730&Signature=WhcDt9YdG2L7GwJOkHpa-qGNMrjDezkAS309IwmWxQx6HHUohjBPWDvfOwENCT3F9LjiV3zlwhnRyUqBh9ntZAMZgynWaX0k5PIUhBkyrhDUpraFbAgXJ8u9-833uLib~aP2KI4GhFMwRmF2dR3twPZXdU7YMQrUKyOCC9R-pb9Y4r6eBz795SNU-~vGoLiXAqfVpy22xXlENURFlPe~ba76EYw1slXgRKHRcccszGAIKkkOoI6Gc80xnAdAHEItOpHcd4C-4VfN5zC0blrOI~5wHwCLVKBJjkS9oSzf3Pj2XIU8Trc4m-vzat~WryCFbAP0dNHl3-ijjesIQuHsyA__&Key-Pair-Id=APKAITQYWVEN757ZA4KQ') no-repeat center center/cover;
       z-index: 1;
+      animation: fadeIn 2s ease-in forwards;
     }
 
     .hero-logo-img {
@@ -90,6 +102,7 @@
       max-width: 600px;
       border-radius: 10px;
       text-align: center;
+      animation: fadeIn 2.5s ease-in forwards;
     }
 
     .hero h1 {
@@ -109,7 +122,7 @@
       position: absolute;
       top: 10%;
       right: 20%;
-      background-color: #2e9df7;
+      background-color: #2E9DF7;
       color: white;
       font-family: 'Proxima Nova', sans-serif;
       font-weight: bold;
@@ -120,6 +133,7 @@
       cursor: pointer;
       transition: background-color 0.3s ease, transform 0.3s ease;
       z-index: 10;
+      animation: fadeIn 3s ease-in forwards;
     }
 
     .cta-button:hover {
